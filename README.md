@@ -3,6 +3,8 @@ Angular2 parallax background scroll directive
 
 Coming Soon.
 
+Idea Here: http://plnkr.co/edit/CFkFyO?p=preview
+
 It's just a placeholder at the moment
 
 https://en.wikipedia.org/wiki/Parallax_scrolling
