@@ -1,9 +1,9 @@
 # ng2-parallax-scroll
 Angular2 parallax direc tive
 
-<a href="https://plnkr.co/edit/zaESbL?p=preview"">
-  <img src="http://i.imgur.com/AsvUIGs.png" width="50% border="1" />
-</a>
+[Demo](https://ng2-ui.github.io/#/parallax)
+
+Plunker Example: https://plnkr.co/edit/zaESbL?p=preview
 
 ## Install
 
