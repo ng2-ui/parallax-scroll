@@ -1,6 +1,6 @@
 {
   "name": "ng2-parallax-scroll",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Angular2 parallax-scroll Directive",
   "license": "MIT",
   "main": "dist/ng2-parallax-scroll.umd.js",
