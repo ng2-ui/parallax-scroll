@@ -17,9 +17,9 @@
   };
 
   map['ng2-parallax-scroll'] = '../dist';
-  packages['ng2-parallax-scroll'] = {main: 'index.js', defaultExtension: 'js'};
-  map['ng2-parallax-scroll'] = '../src';
-  packages['ng2-parallax-scroll'] = {main: 'index.ts', defaultExtension: 'ts'};
+  packages['ng2-parallax-scroll'] = {main: 'ng2-parallax-scroll.umd.js', defaultExtension: 'js'};
+  // map['ng2-parallax-scroll'] = '../src';
+  // packages['ng2-parallax-scroll'] = {main: 'index.ts', defaultExtension: 'ts'};
 
   System.config({
     transpiler: 'typescript', //use typescript for compilation

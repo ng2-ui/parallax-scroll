@@ -14,7 +14,7 @@ Plunker Example: https://plnkr.co/edit/zaESbL?p=preview
 2. add `map` and `packages` to your `systemjs.config.js`
 
         map['ng2-parallax-scroll'] = 'node_modules/ng2-parallax-scroll/dist';
-        packages['ng2-parallax-scroll'] = { main: 'index.js', defaultExtension: 'js' }
+        packages['ng2-parallax-scroll'] = { main: 'ng2-parallax-scroll.umd.js', defaultExtension: 'js' }
 
 3. import Ng2ParallaxScrollModule to your AppModule
         import { NgModule } from '@angular/core';
