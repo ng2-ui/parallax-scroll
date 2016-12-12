@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@angular/core"), require("@angular/forms"), require("@angular/platform-browser"));
+		module.exports = factory(require("@angular/core"), require("@angular/forms"), require("@angular/common"));
 	else if(typeof define === 'function' && define.amd)
-		define(["@angular/core", "@angular/forms", "@angular/platform-browser"], factory);
+		define(["@angular/core", "@angular/forms", "@angular/common"], factory);
 	else if(typeof exports === 'object')
-		exports["ng2-parallax-scroll"] = factory(require("@angular/core"), require("@angular/forms"), require("@angular/platform-browser"));
+		exports["ng2-parallax-scroll"] = factory(require("@angular/core"), require("@angular/forms"), require("@angular/common"));
 	else
-		root["ng2-parallax-scroll"] = factory(root["@angular/core"], root["@angular/forms"], root["@angular/platform-browser"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__) {
+		root["ng2-parallax-scroll"] = factory(root["@angular/core"], root["@angular/forms"], root["@angular/common"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -55,56 +55,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(1);
-	var forms_1 = __webpack_require__(2);
-	var platform_browser_1 = __webpack_require__(3);
-	var ng2_parallax_scroll_directive_1 = __webpack_require__(4);
+	var ng2_parallax_scroll_directive_1 = __webpack_require__(1);
 	exports.Ng2ParallaxScrollDirective = ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective;
-	var Ng2ParallaxScrollModule = (function () {
-	    function Ng2ParallaxScrollModule() {
-	    }
-	    Ng2ParallaxScrollModule = __decorate([
-	        core_1.NgModule({
-	            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-	            declarations: [ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective],
-	            exports: [ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective]
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], Ng2ParallaxScrollModule);
-	    return Ng2ParallaxScrollModule;
-	}());
-	exports.Ng2ParallaxScrollModule = Ng2ParallaxScrollModule;
+	var ng2_parallax_scroll_module_1 = __webpack_require__(3);
+	exports.Ng2ParallaxScrollModule = ng2_parallax_scroll_module_1.Ng2ParallaxScrollModule;
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
-
-/***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
-
-/***/ },
-/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -117,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(1);
+	var core_1 = __webpack_require__(2);
 	var Ng2ParallaxScrollDirective = (function () {
 	    function Ng2ParallaxScrollDirective(viewContainer) {
 	        this.viewContainer = viewContainer;
@@ -179,16 +137,68 @@ return /******/ (function(modules) { // webpackBootstrap
 	            this.img.style.bottom = parallax * -1 + 'px';
 	        }
 	    };
-	    Ng2ParallaxScrollDirective = __decorate([
-	        core_1.Directive({
-	            selector: '[ng2-parallax], ng2-parallax'
-	        }), 
-	        __metadata('design:paramtypes', [core_1.ViewContainerRef])
-	    ], Ng2ParallaxScrollDirective);
 	    return Ng2ParallaxScrollDirective;
 	}());
+	Ng2ParallaxScrollDirective = __decorate([
+	    core_1.Directive({
+	        selector: '[ng2-parallax], ng2-parallax'
+	    }),
+	    __metadata("design:paramtypes", [core_1.ViewContainerRef])
+	], Ng2ParallaxScrollDirective);
 	exports.Ng2ParallaxScrollDirective = Ng2ParallaxScrollDirective;
 
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var forms_1 = __webpack_require__(4);
+	var common_1 = __webpack_require__(5);
+	var ng2_parallax_scroll_directive_1 = __webpack_require__(1);
+	var Ng2ParallaxScrollModule = (function () {
+	    function Ng2ParallaxScrollModule() {
+	    }
+	    return Ng2ParallaxScrollModule;
+	}());
+	Ng2ParallaxScrollModule = __decorate([
+	    core_1.NgModule({
+	        imports: [common_1.CommonModule, forms_1.FormsModule],
+	        declarations: [ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective],
+	        exports: [ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective]
+	    }),
+	    __metadata("design:paramtypes", [])
+	], Ng2ParallaxScrollModule);
+	exports.Ng2ParallaxScrollModule = Ng2ParallaxScrollModule;
+
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_4__;
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_5__;
 
 /***/ }
 /******/ ])

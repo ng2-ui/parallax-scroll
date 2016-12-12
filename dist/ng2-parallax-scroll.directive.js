@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Ng2ParallaxScrollDirective = (function () {
     function Ng2ParallaxScrollDirective(viewContainer) {
         this.viewContainer = viewContainer;
@@ -70,13 +70,13 @@ var Ng2ParallaxScrollDirective = (function () {
             this.img.style.bottom = parallax * -1 + 'px';
         }
     };
-    Ng2ParallaxScrollDirective = __decorate([
-        core_1.Directive({
-            selector: '[ng2-parallax], ng2-parallax'
-        }), 
-        __metadata('design:paramtypes', [core_1.ViewContainerRef])
-    ], Ng2ParallaxScrollDirective);
     return Ng2ParallaxScrollDirective;
 }());
+Ng2ParallaxScrollDirective = __decorate([
+    core_1.Directive({
+        selector: '[ng2-parallax], ng2-parallax'
+    }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef])
+], Ng2ParallaxScrollDirective);
 exports.Ng2ParallaxScrollDirective = Ng2ParallaxScrollDirective;
 //# sourceMappingURL=ng2-parallax-scroll.directive.js.map
