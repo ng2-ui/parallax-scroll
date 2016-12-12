@@ -1,7 +1,7 @@
 # ng2-parallax-scroll
 Angular2 parallax direc tive
 
-[Demo](https://ng2-ui.github.io/#/parallax)
+[Demo](https://rawgit.com/ng2-ui/ng2-parallax-scroll/master/app/index.html)
 
 Plunker Example: https://plnkr.co/edit/zaESbL?p=preview
 
