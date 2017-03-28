@@ -1,6 +1,6 @@
 "use strict";
-var ng2_parallax_scroll_directive_1 = require("./ng2-parallax-scroll.directive");
-exports.Ng2ParallaxScrollDirective = ng2_parallax_scroll_directive_1.Ng2ParallaxScrollDirective;
-var ng2_parallax_scroll_module_1 = require("./ng2-parallax-scroll.module");
-exports.Ng2ParallaxScrollModule = ng2_parallax_scroll_module_1.Ng2ParallaxScrollModule;
+var parallax_scroll_directive_1 = require("./parallax-scroll.directive");
+exports.NguiParallaxScrollDirective = parallax_scroll_directive_1.NguiParallaxScrollDirective;
+var parallax_scroll_module_1 = require("./parallax-scroll.module");
+exports.NguiParallaxScrollModule = parallax_scroll_module_1.NguiParallaxScrollModule;
 //# sourceMappingURL=index.js.map
