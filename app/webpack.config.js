@@ -4,7 +4,7 @@ const config = {
   resolve: {
     extensions: ['', '.ts', '.webpack.js', '.web.js', '.js'],
     alias: {
-      'ng2-parallax-scroll': '../src/index.ts'
+      '@ngui/parallax-scroll': '../src/index.ts'
     }
   },
   devtool: 'source-map',

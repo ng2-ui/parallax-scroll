@@ -1,30 +1,29 @@
-# ng2-parallax-scroll
+# parallax-scroll
 Angular2 parallax direc tive
 
-[Demo](https://rawgit.com/ng2-ui/ng2-parallax-scroll/master/app/index.html)
+[Demo](https://rawgit.com/ng2-ui/parallax-scroll/master/app/index.html)
 
 Plunker Example: https://plnkr.co/edit/zaESbL?p=preview
 
 ## Install
 
-1. install ng2-parallax-scroll
+1. install @ngui/parallax-scroll
 
-        $ npm install ng2-parallax-scroll --save
+        $ npm install @ngui/parallax-scroll --save
 
 2. add `map` and `packages` to your `systemjs.config.js`
 
-        map['ng2-parallax-scroll'] = 'node_modules/ng2-parallax-scroll/dist';
-        packages['ng2-parallax-scroll'] = { main: 'ng2-parallax-scroll.umd.js', defaultExtension: 'js' }
+        map['@ngui/parallax-scroll'] = '@ngui/parallax-scroll/dist/parallax-scroll.umd.js';
 
-3. import Ng2ParallaxScrollModule to your AppModule
+3. import NguiParallaxScrollModule to your AppModule
         import { NgModule } from '@angular/core';
         import { FormsModule } from "@angular/forms";
         import { BrowserModule  } from '@angular/platform-browser';
         import { AppComponent } from './app.component';
-        import { Ng2ParallaxScrollModule } from 'ng2-parallax-scroll';
+        import { NguiParallaxScrollModule } from '@ngui/parallax-scroll';
         
         @NgModule({
-          imports: [BrowserModule, FormsModule, Ng2ParallaxScroll],
+          imports: [BrowserModule, FormsModule, NguiParallaxScroll],
           declarations: [AppComponent],
           bootstrap: [ AppComponent ]
         })
@@ -40,7 +39,7 @@ For full example, please check out `test` directory to see the example of;
 
 ## Use it in your code
 
-      <div ng2-parallax style="height: 300px">
+      <div ngui-parallax style="height: 300px">
         <img src="http://materializecss.com/images/parallax1.jpg" />
       </div>`,
             
@@ -69,8 +68,8 @@ please send me email to `allenhwkim AT gmail.com` with your github id.
 
 ### To start
 
-    $ git clone https://github.com/ng2-ui/ng2-parallax-scroll.git
-    $ cd ng2-parallax-scroll
+    $ git clone https://github.com/ng2-ui/ngui-parallax-scroll.git
+    $ cd ngui-parallax-scroll
     $ npm install
     $ npm start
 

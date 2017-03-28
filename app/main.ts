@@ -8,15 +8,14 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from "@angular/forms";
 
 import { AppComponent }   from './app.component';
 
 //noinspection TypeScriptCheckImport
-import { Ng2ParallaxScrollModule }  from 'ng2-parallax-scroll';
+import { NguiParallaxScrollModule }  from '@ngui/parallax-scroll';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, Ng2ParallaxScrollModule],
+  imports: [BrowserModule, NguiParallaxScrollModule],
   declarations: [AppComponent],
   bootstrap: [ AppComponent ]
 })

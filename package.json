@@ -1,9 +1,9 @@
 {
-  "name": "ng2-parallax-scroll",
-  "version": "0.4.0",
+  "name": "@ngui/parallax-scroll",
+  "version": "0.5.0",
   "description": "Angular2 parallax-scroll Directive",
   "license": "MIT",
-  "main": "dist/ng2-parallax-scroll.umd.js",
+  "main": "dist/parallax-scroll.umd.js",
   "modudle": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng2-ui/ng2-parallax-scroll.git"
+    "url": "git+https://github.com/ng2-ui/parallax-scroll.git"
   },
   "author": "Allen Kim <allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ng2-ui/ng2-parallax-scroll/issues"
+    "url": "https://github.com/ng2-ui/parallax-scroll/issues"
   },
-  "homepage": "https://github.com/ng2-ui/ng2-parallax-scroll#readme",
+  "homepage": "https://github.com/ng2-ui/parallax-scroll#readme",
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^2.3.0",
