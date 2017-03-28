@@ -1,6 +1,14 @@
 # parallax-scroll
 Angular2 parallax direc tive
 
+## IMPORTANT NOTICE
+
+After 0.5.0 or higher, `ng2-parallax-scroll` has been changed to `@ngui/parallax-scroll`. Here are the changes;
+
+* Module `ng2-parallax-scroll` is changed to `@ngui/parallax-scroll`.
+* Direvtive `ng2-parallax-scroll` is changed to `ngui-parallax-scroll`.
+* Class name `Ng2ParallaxScrollModule` is changed to `NguiParallaxScrollModule`.
+
 [Demo](https://rawgit.com/ng2-ui/parallax-scroll/master/app/index.html)
 
 Plunker Example: https://plnkr.co/edit/zaESbL?p=preview
