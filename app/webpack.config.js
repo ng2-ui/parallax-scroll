@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 const config = {
   resolve: {
-    extensions: ['', '.ts', '.webpack.js', '.web.js', '.js'],
+    extensions: ['.ts', '.webpack.js', '.web.js', '.js'],
     alias: {
       '@ngui/parallax-scroll': '../src/index.ts'
     }
@@ -10,15 +10,23 @@ const config = {
   devtool: 'source-map',
   entry: './app/main.ts',
   module: {
-    loaders: [
-      { test: /\.ts$/, loaders: ['ts', 'angular2-template-loader'] },
-      { test: /\.html$/, loader: 'raw' }
+    rules: [
+      {
+        test: /\.ts$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              include: ['src/**/*.ts', 'app/**/*.ts']
+            },
+          },
+          'angular2-template-loader'
+        ]
+      },
+      { test: /\.html$/, use: 'raw-loader' }
     ]
   },
   plugins: [],
-  ts: {
-    include: ['src/**/*.ts', 'app/**/*.ts']
-  },
   output: {
     path: `${__dirname}/build/`,
     publicPath: '/build/',
@@ -30,8 +38,8 @@ if (process.env.NODE_ENV === 'prod') {
   config.plugins = [
     new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
   ];
-  config.module.loaders.push({
-    test: /\.ts$/, loader: 'strip-loader?strip[]=debug,strip[]=console.log'
+  config.module.rules.push({
+    test: /\.ts$/, use: 'strip-loader?strip[]=debug,strip[]=console.log'
   });
 }
 
